@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar.astro"
 import { Image } from 'astro:assets';
 import Camillo from "../assets/immaginacamillo.jpg"
 import Mens from "../assets/mensana.jpg"
+import { Cloudinary } from 'astro-cloudinary-image';
 const Title ="Monster Test"
 ---
 
@@ -20,7 +21,11 @@ const Title ="Monster Test"
         <Image src={Mens} alt="Camillo Bianchi" class="h-auto max-w-full rounded-lg"/>
     </div>
     <div>
-        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
+        <Cloudinary 
+      alt="A sample image"
+      src="434136480_7638274662890498_4614367361558143783_n_yhcsv7" 
+      class="h-auto max-w-full rounded-lg"
+    />
     </div>
     <div>
         <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
