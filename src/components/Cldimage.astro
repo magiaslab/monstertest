@@ -11,7 +11,6 @@ const { src, ...props } = Astro.props;
 
 let cldSrc = cld.image(src)
                 .format('auto')
-                .delivery('q_auto')
 
 if ( src.startsWith('https://')) {
   cldSrc.setDeliveryType('fetch');
