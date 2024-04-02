@@ -1,16 +1,55 @@
 ---
-
+import Main from "../layouts/main.astro";
+import Navbar from "../components/Navbar.astro"
+import { Image } from 'astro:assets';
+import Camillo from "../assets/immaginacamillo.jpg"
+import Mens from "../assets/mensana.jpg"
+const Title ="Monster Test"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Main title={Title}>
+<Navbar/>
+
+
+
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+    <div>
+        <Image src={Camillo} alt="Camillo Bianchi" class="h-auto max-w-full rounded-lg"/>
+    </div>
+    <div>
+        <Image src={Mens} alt="Camillo Bianchi" class="h-auto max-w-full rounded-lg"/>
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg" alt="">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg" alt="">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg" alt="">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg" alt="">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg" alt="">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg" alt="">
+    </div>
+</div>
+
+
+</Main>
