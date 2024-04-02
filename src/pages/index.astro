@@ -5,7 +5,6 @@ import { Image } from 'astro:assets';
 import Camillo from "../assets/immaginacamillo.jpg"
 import Mens from "../assets/mensana.jpg"
 import Cldimage from "../components/Cldimage.astro";
-import Gallerymensana from "../components/Gallerymensana.astro";
 const Title ="Monster Test"
 ---
 
@@ -16,7 +15,7 @@ const Title ="Monster Test"
 
 <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
     <div>
-        <Image src={Camillo} alt="Camillo Bianchi" class="h-auto max-w-full rounded-lg"/>
+        <Image src={Camillo} alt="Camillo Bianchi" class="h-auto max-w-full rounded-lg" data-lightbox="image-2" data-title="My caption"/>
     </div>
     <div>
         <Image src={Mens} alt="Camillo Bianchi" class="h-auto max-w-full rounded-lg"/>
@@ -31,7 +30,7 @@ const Title ="Monster Test"
        />
     </div>
     <div>
-        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
+        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="" data-lightbox="image-1" data-title="My caption">
     </div>
     <div>
         <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
