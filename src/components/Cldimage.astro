@@ -12,7 +12,6 @@ const { src, ...props } = Astro.props;
 let cldSrc = cld.image(src)
                 .format('auto')
                 .delivery('q_auto')
-                .resize(`c_crop,w_${props.width},h_${props.height},g_face`);
 
 if ( src.startsWith('https://')) {
   cldSrc.setDeliveryType('fetch');
