@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/check": "^0.5.10",
     "@astrojs/netlify": "^5.2.0",
+    "@astrojs/preact": "^3.1.2",
     "@astrojs/react": "^3.1.0",
     "@astrojs/tailwind": "^5.1.0",
     "@cloudinary/url-gen": "^1.19.0",
