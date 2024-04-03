@@ -7,20 +7,19 @@ import Mens from "../assets/mensana.jpg"
 import Cldimage from "../components/Cldimage.astro";
 const Title ="Monster Test"
 ---
-<link href="/src/css/lightbox.css" rel="stylesheet" />
 <Main title={Title}>
 <Navbar/>
 
 
 
 <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-    <div>
-        <a href="/src/assets/immaginacamillo.jpg" data-lightbox="image-2"><Image src={Camillo} alt="Camillo Bianchi" class="h-auto max-w-full rounded-lg" /></a>
+    <div class="some-wrapper" data-lightbox="true">
+        <Image src={Camillo} alt="Camillo Bianchi" class="h-auto max-w-full rounded-lg" />
     </div>
-    <div>
+    <div class="some-wrapper" data-lightbox="true">
         <Image src={Mens} alt="Camillo Bianchi" class="h-auto max-w-full rounded-lg"/>
     </div>
-    <div>
+    <div class="some-wrapper" data-lightbox="true">
        <Cldimage
        width="100%"
        height="100%"
@@ -37,7 +36,7 @@ const Title ="Monster Test"
     </div>
     <div>
         
-        <a href="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg" data-lightbox="roadtrip"><img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg" alt=""></a>
+       <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg" alt="">
     </div>
     <div>
         <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg" alt="">
@@ -62,5 +61,4 @@ const Title ="Monster Test"
 <div>
     <a href="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg" data-lightbox="roadtrip">Image #2</a>
 </div>
-<script is:inline src="/src/js/lightbox-plus-jquery.min.js"></script>
 </Main>
